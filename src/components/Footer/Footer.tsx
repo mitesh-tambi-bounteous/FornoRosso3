@@ -1,15 +1,11 @@
 import { footerContent } from '../../content/footerContent';
 import styles from './Footer.module.css';
 
-function isExternal(url: string) {
-  return /^https?:\/\//.test(url);
-}
-
 export function Footer() {
   const { hours, address, contact, socialLinks, legalLinks } = footerContent;
 
   return (
-    <footer className={styles.footer} style={{ maxWidth: '100%', boxSizing: 'border-box' }}>
+    <footer className={styles.footer}>
       <div className={styles.section}>
         <h2 className={styles.heading}>Kitchen Hours</h2>
         <p>{hours.display}</p>

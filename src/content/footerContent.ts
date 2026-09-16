@@ -6,21 +6,21 @@ export interface FooterLink {
 
 export const footerContent = {
   hours: {
-    display: 'Mon–Sun: 11:00 AM – 10:00 PM',
+    display: 'Mon–Thu 11am–9pm, Fri–Sat 11am–10pm, Sun 12pm–8pm',
   },
   address: {
-    display: '123 Forno Rosso Way, Springfield, ST 00000',
+    display: '482 Elm Street, Riverside, CA 92501',
   },
   contact: {
-    phoneDisplay: '(555) 123-4567',
-    phoneHref: 'tel:+15551234567',
-    emailDisplay: 'hello@fornorosso.example',
-    emailHref: 'mailto:hello@fornorosso.example',
+    phoneDisplay: '(951) 555-0142',
+    phoneHref: 'tel:+19515550142',
+    emailDisplay: 'info@fornorossopizzeria.com',
+    emailHref: 'mailto:info@fornorossopizzeria.com',
   },
   socialLinks: [
-    { id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/fornorosso' },
-    { id: 'instagram', label: 'Instagram', url: 'https://www.instagram.com/fornorosso' },
-    { id: 'twitter', label: 'Twitter', url: 'https://www.twitter.com/fornorosso' },
+    { id: 'facebook', label: 'Facebook', url: 'https://www.facebook.com/fornorossopizzeria' },
+    { id: 'instagram', label: 'Instagram', url: 'https://www.instagram.com/fornorossopizzeria' },
+    { id: 'tiktok', label: 'TikTok', url: 'https://www.tiktok.com/@fornorossopizzeria' },
   ] satisfies FooterLink[],
   legalLinks: [
     { id: 'privacy-policy', label: 'Privacy Policy', url: '/privacy-policy' },
