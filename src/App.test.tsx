@@ -14,4 +14,14 @@ describe('App', () => {
     await userEvent.click(getByRole('button', { name: /add to order/i }));
     expect(screen.getByTestId('cart-count')).toHaveTextContent('1');
   });
+
+  it('accumulates the cart count across clicks on different pizza cards', async () => {
+    render(<App />);
+    const [firstPizza, secondPizza] = CURATED_PIZZAS;
+    const firstCard = screen.getByText(firstPizza.name).closest('article')!;
+    const secondCard = screen.getByText(secondPizza.name).closest('article')!;
+    await userEvent.click(within(firstCard).getByRole('button', { name: /add to order/i }));
+    await userEvent.click(within(secondCard).getByRole('button', { name: /add to order/i }));
+    expect(screen.getByTestId('cart-count')).toHaveTextContent('2');
+  });
 });
