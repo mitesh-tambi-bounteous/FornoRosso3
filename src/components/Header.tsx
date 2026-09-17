@@ -6,7 +6,7 @@ export function Header() {
   const isEmpty = count === 0;
 
   return (
-    <header>
+    <header className={styles.header}>
       <span>Cart</span>
       <span
         data-testid="cart-count"
