@@ -1,0 +1,16 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background-color: #2e7d32;
+  color: #fff;
+  font-weight: bold;
+}
+
+.badgeDisabled {
+  background-color: #bdbdbd;
+  color: #757575;
+}
