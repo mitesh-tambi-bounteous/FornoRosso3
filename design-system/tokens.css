@@ -1,0 +1,58 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-fg: #1a1410; /** Primary body text color. Near-black with a warm undertone. */
+  --color-bg: #fdfaf6; /** Primary page background. Warm off-white, pairs with color-fg at >18:1 contrast. */
+  --color-primary: #d62828; /** Bold tomato-red brand accent. Meets 4.5:1 with color-fg-inverse text. */
+  --color-primary-hover: #b81f1f; /** Darkened hover/active state of color-primary. */
+  --color-secondary: #2d6a4f; /** Basil-green secondary accent. */
+  --color-border: #e5e0da; /** Default hairline border for cards, inputs, dividers. */
+  --color-surface: #ffffff; /** Raised surface background for cards and form controls. */
+  --color-fg-inverse: #ffffff; /** Text/icon color for use on color-primary or color-secondary backgrounds. */
+  --color-fg-muted: #6b6058; /** Secondary/muted text color, e.g. captions and helper text. */
+  --space-1: 4px; /** Smallest spacing increment. */
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 28px;
+  --font-family-display: Poppins, sans-serif; /** Bold display/heading typeface. */
+  --font-family-body: Inter, sans-serif; /** Body copy and UI typeface. */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  --line-height-body: 1.5;
+  --line-height-heading: 1.15;
+  --border-width-default: 1px;
+  --shadow-sm: 0px 1px 2px 0px rgb(10.2% 7.84% 6.27% / 0.08); /** Subtle resting shadow for form controls and chips. */
+  --shadow-md: 0px 4px 12px 0px rgb(10.2% 7.84% 6.27% / 0.14); /** Elevated shadow for cards. */
+  --typography-heading: 900 28px/1.15 Poppins, sans-serif; /** Bold display heading style, e.g. page/section titles. */
+  --typography-body: 400 16px/1.5 Inter, sans-serif; /** Default body copy style. */
+  --border-default: var(--border-width-default) solid var(--color-border); /** Standard 1px hairline border used on cards and inputs. */
+  --button-primary-background: var(--color-primary);
+  --button-primary-background-hover: var(--color-primary-hover);
+  --button-primary-foreground: var(--color-fg-inverse);
+  --button-primary-border: var(--color-primary);
+  --button-primary-radius: var(--radius-md);
+  --button-secondary-background: var(--color-surface);
+  --button-secondary-foreground: var(--color-primary);
+  --button-secondary-border: var(--color-primary);
+  --button-secondary-radius: var(--radius-md);
+  --card-default-background: var(--color-surface);
+  --card-default-border: var(--color-border);
+  --card-default-radius: var(--radius-lg);
+  --chip-default-background: var(--color-bg);
+  --chip-default-foreground: var(--color-fg);
+  --chip-default-border: var(--color-border);
+  --chip-default-radius: var(--radius-lg);
+  --input-default-background: var(--color-surface);
+  --input-default-foreground: var(--color-fg);
+  --input-default-border: var(--color-border);
+  --input-default-radius: var(--radius-sm);
+}
