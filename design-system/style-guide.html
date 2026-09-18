@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Forno Rosso — Design System Style Guide</title>
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="prototype-utils.css">
+<style>
+  .sg-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: var(--space-4) var(--space-3);
+  }
+  .sg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--space-3);
+  }
+  .sg-swatch {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    font-size: var(--font-size-sm);
+  }
+  .sg-swatch-color {
+    height: 64px;
+  }
+  .sg-swatch-label {
+    padding: var(--space-2);
+    background: var(--color-surface);
+  }
+  .sg-dimension {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-2);
+  }
+  .sg-dimension-bar {
+    background: var(--color-primary);
+    height: 8px;
+  }
+  .sg-component-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-3);
+  }
+  code {
+    font-size: var(--font-size-sm);
+    background: var(--color-bg);
+    padding: 2px 4px;
+    border-radius: var(--radius-sm);
+  }
+</style>
+</head>
+<body>
+
+<header class="sg-section">
+  <h1>Forno Rosso Design System</h1>
+  <p class="text-muted">Bold, modern tokens and components for the pizza restaurant app.</p>
+</header>
+
+<section class="sg-section">
+  <h2>Colors</h2>
+  <div class="sg-grid">
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-fg);"></div>
+      <div class="sg-swatch-label">color-fg</div>
+    </div>
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-bg);"></div>
+      <div class="sg-swatch-label">color-bg</div>
+    </div>
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-primary);"></div>
+      <div class="sg-swatch-label">color-primary</div>
+    </div>
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-primary-hover);"></div>
+      <div class="sg-swatch-label">color-primary-hover</div>
+    </div>
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-secondary);"></div>
+      <div class="sg-swatch-label">color-secondary</div>
+    </div>
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-border);"></div>
+      <div class="sg-swatch-label">color-border</div>
+    </div>
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-surface);"></div>
+      <div class="sg-swatch-label">color-surface</div>
+    </div>
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-fg-inverse); border-bottom:1px solid var(--color-border);"></div>
+      <div class="sg-swatch-label">color-fg-inverse</div>
+    </div>
+    <div class="sg-swatch">
+      <div class="sg-swatch-color" style="background: var(--color-fg-muted);"></div>
+      <div class="sg-swatch-label">color-fg-muted</div>
+    </div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Spacing</h2>
+  <div class="sg-dimension">
+    <code>space-1</code>
+    <div class="sg-dimension-bar" style="width: var(--space-1);"></div>
+  </div>
+  <div class="sg-dimension">
+    <code>space-2</code>
+    <div class="sg-dimension-bar" style="width: var(--space-2);"></div>
+  </div>
+  <div class="sg-dimension">
+    <code>space-3</code>
+    <div class="sg-dimension-bar" style="width: var(--space-3);"></div>
+  </div>
+  <div class="sg-dimension">
+    <code>space-4</code>
+    <div class="sg-dimension-bar" style="width: var(--space-4);"></div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Radii</h2>
+  <div class="sg-component-row">
+    <div style="width:64px; height:64px; background: var(--color-primary); border-radius: var(--radius-sm);"></div>
+    <code>radius-sm</code>
+    <div style="width:64px; height:64px; background: var(--color-primary); border-radius: var(--radius-md);"></div>
+    <code>radius-md</code>
+    <div style="width:64px; height:64px; background: var(--color-primary); border-radius: var(--radius-lg);"></div>
+    <code>radius-lg</code>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Type scale</h2>
+  <p style="font-size: var(--font-size-sm);">font-size-sm — The quick brown fox jumps over the lazy dog.</p>
+  <p style="font-size: var(--font-size-md);">font-size-md — The quick brown fox jumps over the lazy dog.</p>
+  <p style="font-size: var(--font-size-lg); font-family: var(--font-family-display); font-weight: var(--font-weight-black);">font-size-lg — Wood-Fired Pizza</p>
+</section>
+
+<section class="sg-section">
+  <h2>Buttons</h2>
+  <div class="sg-component-row">
+    <button class="btn btn-primary">Order Now</button>
+    <button class="btn btn-secondary">View Menu</button>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Card</h2>
+  <div class="card" style="max-width: 320px;">
+    <h3>Margherita Pizza</h3>
+    <p class="text-muted">San Marzano tomato, fresh mozzarella, basil, extra-virgin olive oil.</p>
+    <div class="row gap-2" style="margin-top: var(--space-3);">
+      <span class="chip">Vegetarian</span>
+      <span class="chip">Wood-fired</span>
+    </div>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Chips</h2>
+  <div class="sg-component-row">
+    <span class="chip">Spicy</span>
+    <span class="chip">Gluten-Free</span>
+    <span class="chip">Chef's Pick</span>
+  </div>
+</section>
+
+<section class="sg-section">
+  <h2>Form controls</h2>
+  <div style="max-width: 320px;">
+    <label class="label" for="sg-name">Name</label>
+    <input class="input" id="sg-name" type="text" placeholder="Your name">
+    <div style="margin-top: var(--space-3);">
+      <label class="label" for="sg-notes">Delivery notes</label>
+      <input class="input" id="sg-notes" type="text" placeholder="Extra crispy crust, please">
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
